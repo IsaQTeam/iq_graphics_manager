@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Graphics Preset Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="panel">
+    <h1>Graphics Settings</h1>
+
+    <div id="presets">
+      <!-- Preset Buttons will be injected -->
+    </div>
+
+    <div id="custom">
+      <h2>Custom Settings</h2>
+      <label>Density: <input id="density" type="range" min="0" max="1" step="0.1" value="0.5" /></label>
+      <label>LOD Scale: <input id="lod" type="range" min="0.1" max="1.5" step="0.1" value="1.0" /></label>
+      <label><input id="shadows" type="checkbox" /> Enable Shadows</label>
+      <label>Timecycle: <input id="timecycle" type="text" placeholder="cinema, REDMIST, etc" /></label>
+      <button id="applyCustom">Apply Custom</button>
+    </div>
+
+    <button id="close">Close</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
